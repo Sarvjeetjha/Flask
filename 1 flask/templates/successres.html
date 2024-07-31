@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <table border="2px solid black  ">
+        <tr>
+            <th>iteam</th>
+            <th>Value</th>
+        </tr>
+        {# This is comment #}
+        {% for key ,pair in result.items()%}
+        <tr>
+            <td>{{key}}</td>
+            <td>{{pair}}</td>
+        </tr>
+         {% endfor %}
+    </table>
+
+</body>
+</html>
